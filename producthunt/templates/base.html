@@ -62,6 +62,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 {% if user.is_authenticated %}
+
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}" onclick="">Logout</a>
                         <form action="{% url 'logout' %}" method="POST" id="logout">
